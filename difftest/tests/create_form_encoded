@@ -2,4 +2,5 @@
 set -e
 KEY=$(uuid)
 curl -s ${KVSTORE_SERVICE_ROOT}/${KEY} --data "somekey=somedata" --data "anotherkey=anotherdata"
+# need to make sure it comes back in a JSON parsable format, hence the pipe to jq
 curl -s ${KVSTORE_SERVICE_ROOT}/${KEY} | jq "."
