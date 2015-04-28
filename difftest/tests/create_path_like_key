@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+set -e
+KEY=$(uuid)
+curl -s ${KVSTORE_SERVICE_ROOT}/${KEY}/subkey -H 'Content-Type: application/json' --data '{"jsonKey":"jsonvalue","uk":"'${KEY}'"}'
+curl -s ${KVSTORE_SERVICE_ROOT}/${KEY}/subkey

@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+set -e
+KEY=$(uuid)
+curl -s --write-out '%{http_code}' ${KVSTORE_SERVICE_ROOT}/${KEY} -H 'Content-Type: application/json' --data 'this is not json'
+echo
+curl -s --write-out '%{http_code}' ${KVSTORE_SERVICE_ROOT}/${KEY}
+echo
