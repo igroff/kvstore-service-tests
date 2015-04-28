@@ -1,1 +1,4 @@
-{"message": "ok"}{"somekey": "somedata", "anotherkey": "anotherdata"}
+{"message": "ok"}{
+  "anotherkey": "anotherdata",
+  "somekey": "somedata"
+}

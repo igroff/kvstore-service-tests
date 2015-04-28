@@ -2,4 +2,4 @@
 set -e
 KEY=$(uuid)
 curl -s ${KVSTORE_SERVICE_ROOT}/${KEY} --data "somekey=somedata" --data "anotherkey=anotherdata"
-curl -s ${KVSTORE_SERVICE_ROOT}/${KEY}
+curl -s ${KVSTORE_SERVICE_ROOT}/${KEY} | jq "."
