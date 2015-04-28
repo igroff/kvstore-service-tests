@@ -1,4 +1,5 @@
 {"message": "ok"}{
-  "anotherkey": "anotherdata",
-  "somekey": "somedata"
+  "somekey": "somedata",
+  "anotherkey": "anotherdata"
 }
+Content-Type: application/json

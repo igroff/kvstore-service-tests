@@ -1,0 +1,8 @@
+#! /usr/bin/env bash
+set -e
+KEY=$(uuid)
+curl -s ${KVSTORE_SERVICE_ROOT}/${KEY} --data "somekey=somedata" --data "anotherkey=anotherdata" -H 'Content-Type: superpants/moviestar'
+echo
+curl -s ${KVSTORE_SERVICE_ROOT}/${KEY}
+echo
+curl -s --head ${KVSTORE_SERVICE_ROOT}/${KEY} | grep 'Content-Type'

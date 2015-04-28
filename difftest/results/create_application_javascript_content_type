@@ -1,0 +1,3 @@
+{"message": "ok"}
+somekey=somedata&anotherkey=anotherdata
+Content-Type: application/javascript
